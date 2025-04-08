@@ -29,7 +29,17 @@ class ConsultaState extends State<Consulta>{
           theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueGrey)),
           home: Scaffold(
             appBar: AppBar(backgroundColor: Colors.blueGrey, title: Text('Marque a consulta')),
-            body: Center(child: Text("Teste", textDirection: TextDirection.ltr))
+            body: Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Column(
+                children: [
+                  Text("Teste", textDirection: TextDirection.ltr),
+                  Text("Teste", textDirection: TextDirection.ltr),
+                  Text("Teste", textDirection: TextDirection.ltr),
+                  Text("Teste", textDirection: TextDirection.ltr),
+                ],
+              ),
+            )
           ),
         );
   }
